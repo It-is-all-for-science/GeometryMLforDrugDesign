@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:17dfa39d0b61b5f5337ae6eac13ae4f3a1decbb9ae630a9d0d76976383dac7d9
-size 720
+Model,MAE (eV),Source,Type,Architecture
+PaiNN,0.0294,Schütt et al. 2021,Literature,Polarizable Atom Interaction NN
+DimeNet++,0.0297,Klicpera et al. 2020,Literature,Improved DimeNet
+DimeNet,0.0326,Klicpera et al. 2020,Literature,Directional message passing NN
+SchNet,0.041,Schütt et al. 2017,Literature,Continuous-filter convolutional NN
+EGNN_baseline,0.071,Satorras et al. 2021,Literature,E(n) Equivariant Graph NN
+EGNN (Ours),0.11065983772277832,This work,Our Models,E(n) Equivariant Graph NN
+GCN (Ours),0.474606,This work,Our Models,Graph Attention Network
+Tabular (Ours),0.5889659523963928,This work,Our Models,Random Forest (sklearn)
+FCNN (Ours),0.756236732006073,This work,Our Models,Fully Connected NN
