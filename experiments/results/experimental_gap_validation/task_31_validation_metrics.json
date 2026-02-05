@@ -1,3 +1,238 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b3605039b1d83e49d93b6eee1fb6153bded7259a9e6d279938c73cc1f195524f
-size 7209
+{
+  "metadata": {
+    "timestamp": 1769887569.420299,
+    "analysis_type": "experimental_validation",
+    "qm9_baseline_mae": 0.076
+  },
+  "overall_metrics": {
+    "mae": 8.80437000989914,
+    "rmse": 8.836927076254847,
+    "r2": 0.00010143869989306112,
+    "pearson_correlation": 0.010071678107101176,
+    "pearson_p_value": 0.9704696150276927,
+    "spearman_correlation": 0.15882352941176472,
+    "spearman_p_value": 0.5568612810855389,
+    "domain_shift_factor": 115.84697381446237,
+    "n_samples": 16
+  },
+  "size_group_metrics": {
+    "small": {
+      "n_samples": 3,
+      "mae": 9.422532717386881,
+      "rmse": 9.44779815228101,
+      "r2": 0.8590956713809478,
+      "pearson_r": 0.9268741399893233,
+      "pearson_p": 0.2449702470412348,
+      "domain_shift_factor": 123.98069364982739,
+      "size_range": "21-28"
+    },
+    "medium": {
+      "n_samples": 9,
+      "mae": 8.834855312771268,
+      "rmse": 8.86776325774775,
+      "r2": 0.07399391706795329,
+      "pearson_r": 0.2720182292934672,
+      "pearson_p": 0.47889118260719477,
+      "domain_shift_factor": 116.24809622067458,
+      "size_range": "32-56"
+    },
+    "large": {
+      "n_samples": 2,
+      "mae": 8.046206665039062,
+      "rmse": 8.04681610423637,
+      "r2": NaN,
+      "pearson_r": NaN,
+      "pearson_p": NaN,
+      "domain_shift_factor": 105.87114032946134,
+      "size_range": "76-79"
+    },
+    "xlarge": {
+      "n_samples": 2,
+      "mae": 8.498105430603026,
+      "rmse": 8.49824355523125,
+      "r2": NaN,
+      "pearson_r": NaN,
+      "pearson_p": NaN,
+      "domain_shift_factor": 111.81717671846087,
+      "size_range": "118-124"
+    }
+  },
+  "detailed_results": [
+    {
+      "name": "metronidazole",
+      "predicted_gap": 12.927286148071289,
+      "experimental_gap": 3.2,
+      "n_atoms": 21,
+      "quality_score": 1.0,
+      "antibacterial_class": "nitroimidazole",
+      "absolute_error": 9.72728614807129,
+      "relative_error": 303.9776921272278,
+      "size_group": "small"
+    },
+    {
+      "name": "chloramphenicol",
+      "predicted_gap": 12.916467666625977,
+      "experimental_gap": 4.1,
+      "n_atoms": 32,
+      "quality_score": 1.0,
+      "antibacterial_class": "phenicol",
+      "absolute_error": 8.816467666625977,
+      "relative_error": 215.03579674697505,
+      "size_group": "medium"
+    },
+    {
+      "name": "trimethoprim",
+      "predicted_gap": 12.936094284057617,
+      "experimental_gap": 3.9,
+      "n_atoms": 39,
+      "quality_score": 1.0,
+      "antibacterial_class": "diaminopyrimidine",
+      "absolute_error": 9.036094284057617,
+      "relative_error": 231.69472523224658,
+      "size_group": "medium"
+    },
+    {
+      "name": "sulfamethoxazole",
+      "predicted_gap": 12.966729164123535,
+      "experimental_gap": 4.5,
+      "n_atoms": 28,
+      "quality_score": 0.9999999999999999,
+      "antibacterial_class": "sulfonamide",
+      "absolute_error": 8.466729164123535,
+      "relative_error": 188.149536980523,
+      "size_group": "small"
+    },
+    {
+      "name": "nitrofurantoin",
+      "predicted_gap": 12.87358283996582,
+      "experimental_gap": 2.8,
+      "n_atoms": 23,
+      "quality_score": 1.0,
+      "antibacterial_class": "nitrofuran",
+      "absolute_error": 10.07358283996582,
+      "relative_error": 359.770815713065,
+      "size_group": "small"
+    },
+    {
+      "name": "penicillin g",
+      "predicted_gap": 12.865816116333008,
+      "experimental_gap": 5.2,
+      "n_atoms": 41,
+      "quality_score": 0.9,
+      "antibacterial_class": "beta_lactam",
+      "absolute_error": 7.665816116333008,
+      "relative_error": 147.41954069871167,
+      "size_group": "medium"
+    },
+    {
+      "name": "ampicillin",
+      "predicted_gap": 12.867999076843262,
+      "experimental_gap": 5.0,
+      "n_atoms": 43,
+      "quality_score": 0.9999999999999999,
+      "antibacterial_class": "beta_lactam",
+      "absolute_error": 7.867999076843262,
+      "relative_error": 157.35998153686523,
+      "size_group": "medium"
+    },
+    {
+      "name": "amoxicillin",
+      "predicted_gap": 12.866862297058105,
+      "experimental_gap": 4.8,
+      "n_atoms": 44,
+      "quality_score": 0.9999999999999999,
+      "antibacterial_class": "beta_lactam",
+      "absolute_error": 8.066862297058105,
+      "relative_error": 168.0596311887105,
+      "size_group": "medium"
+    },
+    {
+      "name": "ciprofloxacin",
+      "predicted_gap": 12.83458423614502,
+      "experimental_gap": 3.6,
+      "n_atoms": 42,
+      "quality_score": 1.0,
+      "antibacterial_class": "fluoroquinolone",
+      "absolute_error": 9.23458423614502,
+      "relative_error": 256.5162287818061,
+      "size_group": "medium"
+    },
+    {
+      "name": "levofloxacin",
+      "predicted_gap": 12.83598518371582,
+      "experimental_gap": 3.7,
+      "n_atoms": 46,
+      "quality_score": 1.0,
+      "antibacterial_class": "fluoroquinolone",
+      "absolute_error": 9.135985183715821,
+      "relative_error": 246.91851847880594,
+      "size_group": "medium"
+    },
+    {
+      "name": "tetracycline",
+      "predicted_gap": 12.844635009765625,
+      "experimental_gap": 2.9,
+      "n_atoms": 56,
+      "quality_score": 1.0,
+      "antibacterial_class": "tetracycline",
+      "absolute_error": 9.944635009765625,
+      "relative_error": 342.91844861260773,
+      "size_group": "medium"
+    },
+    {
+      "name": "doxycycline",
+      "predicted_gap": 12.845253944396973,
+      "experimental_gap": 3.1,
+      "n_atoms": 56,
+      "quality_score": 0.9999999999999999,
+      "antibacterial_class": "tetracycline",
+      "absolute_error": 9.745253944396973,
+      "relative_error": 314.3630304644185,
+      "size_group": "medium"
+    },
+    {
+      "name": "streptomycin",
+      "predicted_gap": 12.845240592956543,
+      "experimental_gap": 4.7,
+      "n_atoms": 79,
+      "quality_score": 0.9999999999999999,
+      "antibacterial_class": "aminoglycoside",
+      "absolute_error": 8.145240592956544,
+      "relative_error": 173.30299133950092,
+      "size_group": "large"
+    },
+    {
+      "name": "gentamicin",
+      "predicted_gap": 12.847172737121582,
+      "experimental_gap": 4.9,
+      "n_atoms": 76,
+      "quality_score": 0.9999999999999999,
+      "antibacterial_class": "aminoglycoside",
+      "absolute_error": 7.947172737121582,
+      "relative_error": 162.18719871676697,
+      "size_group": "large"
+    },
+    {
+      "name": "erythromycin",
+      "predicted_gap": 12.8465576171875,
+      "experimental_gap": 4.3,
+      "n_atoms": 118,
+      "quality_score": 0.9,
+      "antibacterial_class": "macrolide",
+      "absolute_error": 8.5465576171875,
+      "relative_error": 198.7571538880814,
+      "size_group": "xlarge"
+    },
+    {
+      "name": "azithromycin",
+      "predicted_gap": 12.849653244018555,
+      "experimental_gap": 4.4,
+      "n_atoms": 124,
+      "quality_score": 0.9,
+      "antibacterial_class": "macrolide",
+      "absolute_error": 8.449653244018554,
+      "relative_error": 192.03757372769442,
+      "size_group": "xlarge"
+    }
+  ]
+}

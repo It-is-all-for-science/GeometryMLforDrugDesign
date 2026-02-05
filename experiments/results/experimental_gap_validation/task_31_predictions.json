@@ -1,3 +1,454 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca44d2d12a2f1265749df212a9110b5abdcfcd04db4aeb4807356f3f77f351ed
-size 12432
+{
+  "metadata": {
+    "timestamp": 1769887569.41029,
+    "best_model": "egnn_model3",
+    "expected_qm9_performance": {
+      "mae": 0.076,
+      "r2": 0.9931
+    },
+    "n_molecules": 16,
+    "n_ensemble_models": 3
+  },
+  "predictions": {
+    "egnn_model3": {
+      "metronidazole": 12.927286148071289,
+      "chloramphenicol": 12.916467666625977,
+      "trimethoprim": 12.936094284057617,
+      "sulfamethoxazole": 12.966729164123535,
+      "nitrofurantoin": 12.87358283996582,
+      "penicillin g": 12.865816116333008,
+      "ampicillin": 12.867999076843262,
+      "amoxicillin": 12.866862297058105,
+      "ciprofloxacin": 12.83458423614502,
+      "levofloxacin": 12.83598518371582,
+      "tetracycline": 12.844635009765625,
+      "doxycycline": 12.845253944396973,
+      "streptomycin": 12.845240592956543,
+      "gentamicin": 12.847172737121582,
+      "erythromycin": 12.8465576171875,
+      "azithromycin": 12.849653244018555
+    },
+    "egnn_model1": {
+      "metronidazole": 11.879251480102539,
+      "chloramphenicol": 11.97192096710205,
+      "trimethoprim": 11.879866600036621,
+      "sulfamethoxazole": 12.07303237915039,
+      "nitrofurantoin": 12.113821029663086,
+      "penicillin g": 11.870558738708496,
+      "ampicillin": 11.879682540893555,
+      "amoxicillin": 11.894957542419434,
+      "ciprofloxacin": 11.861000061035156,
+      "levofloxacin": 11.805025100708008,
+      "tetracycline": 11.896524429321289,
+      "doxycycline": 11.89964485168457,
+      "streptomycin": 11.77474308013916,
+      "gentamicin": 11.639944076538086,
+      "erythromycin": 11.596038818359375,
+      "azithromycin": 11.579448699951172
+    },
+    "egnn_model2": {
+      "metronidazole": 11.178138732910156,
+      "chloramphenicol": 11.203313827514648,
+      "trimethoprim": 11.175400733947754,
+      "sulfamethoxazole": 11.17681884765625,
+      "nitrofurantoin": 11.218846321105957,
+      "penicillin g": 11.199800491333008,
+      "ampicillin": 11.19784927368164,
+      "amoxicillin": 11.1962890625,
+      "ciprofloxacin": 11.213394165039062,
+      "levofloxacin": 11.203895568847656,
+      "tetracycline": 11.198226928710938,
+      "doxycycline": 11.200492858886719,
+      "streptomycin": 11.185945510864258,
+      "gentamicin": 11.177474975585938,
+      "erythromycin": 11.170085906982422,
+      "azithromycin": 11.168270111083984
+    }
+  },
+  "ensemble_predictions": {
+    "metronidazole": {
+      "mean": 11.994892120361328,
+      "std": 0.7187529655594774,
+      "min": 11.178138732910156,
+      "max": 12.927286148071289,
+      "n_models": 3
+    },
+    "chloramphenicol": {
+      "mean": 12.030567487080893,
+      "std": 0.7006204773126422,
+      "min": 11.203313827514648,
+      "max": 12.916467666625977,
+      "n_models": 3
+    },
+    "trimethoprim": {
+      "mean": 11.99712053934733,
+      "std": 0.7235660804020266,
+      "min": 11.175400733947754,
+      "max": 12.936094284057617,
+      "n_models": 3
+    },
+    "sulfamethoxazole": {
+      "mean": 12.072193463643393,
+      "std": 0.7307280675615817,
+      "min": 11.17681884765625,
+      "max": 12.966729164123535,
+      "n_models": 3
+    },
+    "nitrofurantoin": {
+      "mean": 12.068750063578287,
+      "std": 0.6762946994222648,
+      "min": 11.218846321105957,
+      "max": 12.87358283996582,
+      "n_models": 3
+    },
+    "penicillin g": {
+      "mean": 11.97872511545817,
+      "std": 0.6844350417097785,
+      "min": 11.199800491333008,
+      "max": 12.865816116333008,
+      "n_models": 3
+    },
+    "ampicillin": {
+      "mean": 11.981843630472818,
+      "std": 0.6856518832071259,
+      "min": 11.19784927368164,
+      "max": 12.867999076843262,
+      "n_models": 3
+    },
+    "amoxicillin": {
+      "mean": 11.98603630065918,
+      "std": 0.68504269363661,
+      "min": 11.1962890625,
+      "max": 12.866862297058105,
+      "n_models": 3
+    },
+    "ciprofloxacin": {
+      "mean": 11.969659487406412,
+      "std": 0.6662929610252196,
+      "min": 11.213394165039062,
+      "max": 12.83458423614502,
+      "n_models": 3
+    },
+    "levofloxacin": {
+      "mean": 11.948301951090494,
+      "std": 0.6739561408241005,
+      "min": 11.203895568847656,
+      "max": 12.83598518371582,
+      "n_models": 3
+    },
+    "tetracycline": {
+      "mean": 11.979795455932617,
+      "std": 0.6747174422157387,
+      "min": 11.198226928710938,
+      "max": 12.844635009765625,
+      "n_models": 3
+    },
+    "doxycycline": {
+      "mean": 11.981797218322754,
+      "std": 0.6739789885995003,
+      "min": 11.200492858886719,
+      "max": 12.845253944396973,
+      "n_models": 3
+    },
+    "streptomycin": {
+      "mean": 11.935309727986654,
+      "std": 0.686853346144404,
+      "min": 11.185945510864258,
+      "max": 12.845240592956543,
+      "n_models": 3
+    },
+    "gentamicin": {
+      "mean": 11.888197263081869,
+      "std": 0.7038915101970105,
+      "min": 11.177474975585938,
+      "max": 12.847172737121582,
+      "n_models": 3
+    },
+    "erythromycin": {
+      "mean": 11.870894114176432,
+      "std": 0.7114765978856913,
+      "min": 11.170085906982422,
+      "max": 12.8465576171875,
+      "n_models": 3
+    },
+    "azithromycin": {
+      "mean": 11.865790685017904,
+      "std": 0.7156610507021627,
+      "min": 11.168270111083984,
+      "max": 12.849653244018555,
+      "n_models": 3
+    }
+  },
+  "experimental_data": {
+    "metronidazole": {
+      "gap_energy": 3.2,
+      "n_atoms": 21,
+      "quality_score": 1.0,
+      "antibacterial_class": "nitroimidazole"
+    },
+    "chloramphenicol": {
+      "gap_energy": 4.1,
+      "n_atoms": 32,
+      "quality_score": 1.0,
+      "antibacterial_class": "phenicol"
+    },
+    "trimethoprim": {
+      "gap_energy": 3.9,
+      "n_atoms": 39,
+      "quality_score": 1.0,
+      "antibacterial_class": "diaminopyrimidine"
+    },
+    "sulfamethoxazole": {
+      "gap_energy": 4.5,
+      "n_atoms": 28,
+      "quality_score": 0.9999999999999999,
+      "antibacterial_class": "sulfonamide"
+    },
+    "nitrofurantoin": {
+      "gap_energy": 2.8,
+      "n_atoms": 23,
+      "quality_score": 1.0,
+      "antibacterial_class": "nitrofuran"
+    },
+    "penicillin g": {
+      "gap_energy": 5.2,
+      "n_atoms": 41,
+      "quality_score": 0.9,
+      "antibacterial_class": "beta_lactam"
+    },
+    "ampicillin": {
+      "gap_energy": 5.0,
+      "n_atoms": 43,
+      "quality_score": 0.9999999999999999,
+      "antibacterial_class": "beta_lactam"
+    },
+    "amoxicillin": {
+      "gap_energy": 4.8,
+      "n_atoms": 44,
+      "quality_score": 0.9999999999999999,
+      "antibacterial_class": "beta_lactam"
+    },
+    "ciprofloxacin": {
+      "gap_energy": 3.6,
+      "n_atoms": 42,
+      "quality_score": 1.0,
+      "antibacterial_class": "fluoroquinolone"
+    },
+    "levofloxacin": {
+      "gap_energy": 3.7,
+      "n_atoms": 46,
+      "quality_score": 1.0,
+      "antibacterial_class": "fluoroquinolone"
+    },
+    "tetracycline": {
+      "gap_energy": 2.9,
+      "n_atoms": 56,
+      "quality_score": 1.0,
+      "antibacterial_class": "tetracycline"
+    },
+    "doxycycline": {
+      "gap_energy": 3.1,
+      "n_atoms": 56,
+      "quality_score": 0.9999999999999999,
+      "antibacterial_class": "tetracycline"
+    },
+    "streptomycin": {
+      "gap_energy": 4.7,
+      "n_atoms": 79,
+      "quality_score": 0.9999999999999999,
+      "antibacterial_class": "aminoglycoside"
+    },
+    "gentamicin": {
+      "gap_energy": 4.9,
+      "n_atoms": 76,
+      "quality_score": 0.9999999999999999,
+      "antibacterial_class": "aminoglycoside"
+    },
+    "erythromycin": {
+      "gap_energy": 4.3,
+      "n_atoms": 118,
+      "quality_score": 0.9,
+      "antibacterial_class": "macrolide"
+    },
+    "azithromycin": {
+      "gap_energy": 4.4,
+      "n_atoms": 124,
+      "quality_score": 0.9,
+      "antibacterial_class": "macrolide"
+    },
+    "Sulfadiazine": {
+      "gap_energy": 4.3,
+      "n_atoms": 27,
+      "quality_score": 0.7,
+      "antibacterial_class": "sulfonamide"
+    },
+    "Sulfisoxazole": {
+      "gap_energy": 4.2,
+      "n_atoms": 31,
+      "quality_score": 0.7,
+      "antibacterial_class": "sulfonamide"
+    },
+    "Isoniazid": {
+      "gap_energy": 4.8,
+      "n_atoms": 17,
+      "quality_score": 0.8,
+      "antibacterial_class": "antitubercular"
+    },
+    "Pyrazinamide": {
+      "gap_energy": 4.6,
+      "n_atoms": 14,
+      "quality_score": 0.7,
+      "antibacterial_class": "antitubercular"
+    },
+    "Ethambutol": {
+      "gap_energy": 5.1,
+      "n_atoms": 38,
+      "quality_score": 0.6,
+      "antibacterial_class": "antitubercular"
+    },
+    "Nalidixic Acid": {
+      "gap_energy": 3.4,
+      "n_atoms": 26,
+      "quality_score": 0.7,
+      "antibacterial_class": "quinolone"
+    },
+    "Furazolidone": {
+      "gap_energy": 2.9,
+      "n_atoms": 22,
+      "quality_score": 0.7,
+      "antibacterial_class": "nitrofuran"
+    },
+    "Cephalexin": {
+      "gap_energy": 4.9,
+      "n_atoms": 47,
+      "quality_score": 0.7,
+      "antibacterial_class": "beta_lactam"
+    },
+    "Norfloxacin": {
+      "gap_energy": 3.8,
+      "n_atoms": 38,
+      "quality_score": 0.7,
+      "antibacterial_class": "fluoroquinolone"
+    },
+    "Ofloxacin": {
+      "gap_energy": 3.5,
+      "n_atoms": 40,
+      "quality_score": 0.7,
+      "antibacterial_class": "fluoroquinolone"
+    },
+    "Cefazolin": {
+      "gap_energy": 4.7,
+      "n_atoms": 45,
+      "quality_score": 0.6,
+      "antibacterial_class": "beta_lactam"
+    },
+    "Cefuroxime": {
+      "gap_energy": 4.6,
+      "n_atoms": 48,
+      "quality_score": 0.6,
+      "antibacterial_class": "beta_lactam"
+    },
+    "Minocycline": {
+      "gap_energy": 3.0,
+      "n_atoms": 58,
+      "quality_score": 0.7,
+      "antibacterial_class": "tetracycline"
+    },
+    "Chlortetracycline": {
+      "gap_energy": 2.8,
+      "n_atoms": 57,
+      "quality_score": 0.6,
+      "antibacterial_class": "tetracycline"
+    },
+    "Oxytetracycline": {
+      "gap_energy": 3.2,
+      "n_atoms": 57,
+      "quality_score": 0.7,
+      "antibacterial_class": "tetracycline"
+    },
+    "Kanamycin": {
+      "gap_energy": 4.8,
+      "n_atoms": 62,
+      "quality_score": 0.6,
+      "antibacterial_class": "aminoglycoside"
+    },
+    "Neomycin": {
+      "gap_energy": 5.0,
+      "n_atoms": 68,
+      "quality_score": 0.6,
+      "antibacterial_class": "aminoglycoside"
+    },
+    "Tobramycin": {
+      "gap_energy": 4.6,
+      "n_atoms": 64,
+      "quality_score": 0.6,
+      "antibacterial_class": "aminoglycoside"
+    },
+    "Clarithromycin": {
+      "gap_energy": 4.2,
+      "n_atoms": 120,
+      "quality_score": 0.6,
+      "antibacterial_class": "macrolide"
+    },
+    "Roxithromycin": {
+      "gap_energy": 4.1,
+      "n_atoms": 126,
+      "quality_score": 0.5,
+      "antibacterial_class": "macrolide"
+    },
+    "Spiramycin": {
+      "gap_energy": 4.5,
+      "n_atoms": 115,
+      "quality_score": 0.6,
+      "antibacterial_class": "macrolide"
+    },
+    "Tylosin": {
+      "gap_energy": 4.0,
+      "n_atoms": 108,
+      "quality_score": 0.5,
+      "antibacterial_class": "macrolide"
+    },
+    "Lincomycin": {
+      "gap_energy": 4.6,
+      "n_atoms": 102,
+      "quality_score": 0.5,
+      "antibacterial_class": "lincosamide"
+    },
+    "Clindamycin": {
+      "gap_energy": 4.4,
+      "n_atoms": 105,
+      "quality_score": 0.5,
+      "antibacterial_class": "lincosamide"
+    },
+    "Vancomycin": {
+      "gap_energy": 3.8,
+      "n_atoms": 234,
+      "quality_score": 0.5,
+      "antibacterial_class": "glycopeptide"
+    },
+    "Teicoplanin": {
+      "gap_energy": 3.9,
+      "n_atoms": 245,
+      "quality_score": 0.5,
+      "antibacterial_class": "glycopeptide"
+    },
+    "Polymyxin B": {
+      "gap_energy": 4.2,
+      "n_atoms": 267,
+      "quality_score": 0.4,
+      "antibacterial_class": "polymyxin"
+    },
+    "Colistin": {
+      "gap_energy": 4.1,
+      "n_atoms": 278,
+      "quality_score": 0.4,
+      "antibacterial_class": "polymyxin"
+    },
+    "Bacitracin": {
+      "gap_energy": 3.7,
+      "n_atoms": 201,
+      "quality_score": 0.4,
+      "antibacterial_class": "polypeptide"
+    }
+  }
+}
