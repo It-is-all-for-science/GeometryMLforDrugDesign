@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f927e5c2693cf6dd9c5ad43d3e1d5447b6a6607ba5528a84a7a60b7641fc8da5
-size 789
+{
+  "model_id": 3,
+  "model_name": "improved_egnn_model3",
+  "started_from_best": true,
+  "best_model_path": "results\\full_qm9\\models\\full_qm9_egnn\\best_model.pth",
+  "config": {
+    "hidden_dim": 256,
+    "num_layers": 5,
+    "epochs": 100,
+    "batch_size": 32,
+    "learning_rate": 0.0001
+  },
+  "training_time": 64661.419415950775,
+  "best_epoch": 98,
+  "best_val_loss": 0.011551572847400458,
+  "test_metrics": {
+    "mae": 0.07622852176427841,
+    "rmse": 0.10639944313140441,
+    "r2": 0.9930745363235474,
+    "mse": 0.011320841498672962,
+    "max_error": "1.6436434",
+    "mean_error": "0.01243692",
+    "std_error": "0.10567007",
+    "n_samples": 13084,
+    "target_mean": "6.851834",
+    "target_std": "1.2785404"
+  },
+  "num_parameters": 2704681
+}
