@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2914a5b3aaa84f367cb59134595efa94a3ba520428938528ec8c8d3282b35ec
-size 541
+"""
+Модуль анализа результатов для молекулярного машинного обучения.
+
+Содержит инструменты для сравнительного анализа моделей,
+статистической оценки значимости различий и визуализации результатов.
+"""
+
+from .comparison import ComparisonAnalyzer, ModelResult, ComparisonResult
+
+__all__ = [
+    'ComparisonAnalyzer',
+    'ModelResult', 
+    'ComparisonResult'
+]

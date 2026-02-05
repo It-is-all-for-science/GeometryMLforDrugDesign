@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a976cb116d11ad011e6449f54ceb1d3e9322e04f8abd88a1aa21a082080e7b2
-size 1044
+"""
+Модуль для обучения и оценки моделей молекулярного машинного обучения.
+
+Содержит классы для обучения моделей, вычисления метрик,
+и управления процессом обучения.
+"""
+
+from .metrics import MetricsCalculator, ModelMetrics
+from .trainer import ModelTrainer, TrainingConfig, TrainingHistory
+from .utils import (
+    EarlyStopping, 
+    LearningRateScheduler, 
+    CheckpointManager,
+    TrainingLogger,
+    GradientClipper,
+    count_parameters,
+    set_random_seed,
+    get_device
+)
+
+__all__ = [
+    # Метрики
+    'MetricsCalculator',
+    'ModelMetrics',
+    
+    # Обучение
+    'ModelTrainer',
+    'TrainingConfig', 
+    'TrainingHistory',
+    
+    # Утилиты
+    'EarlyStopping',
+    'LearningRateScheduler',
+    'CheckpointManager',
+    'TrainingLogger',
+    'GradientClipper',
+    'count_parameters',
+    'set_random_seed',
+    'get_device'
+]

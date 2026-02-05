@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e7b097611d195ae730c8c459a2f1ff65cd515c00a14e387b36f3893cb70f5fc2
-size 366
+"""
+Geometry ML for Drug Design
+
+Исследовательский проект по применению геометрического машинного обучения
+и топологического анализа данных для задач разработки лекарств.
+"""
+
+__version__ = "0.1.0"
+__author__ = "DL School Research Team"
