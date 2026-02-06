@@ -322,13 +322,13 @@
 
 **Результаты по размерным группам:**
 
-| Группа | N | MAE (eV) | RMSE (eV) | R² | Domain Shift | Относительная ошибка |
-|--------|---|----------|-----------|----|--------------|--------------------|
-| **Small** | 8 | **0.112** | 0.145 | **0.969** | 1.47x | 1.6% |
-| **Medium** | 19 | **0.197** | 0.289 | **0.890** | 2.59x | 2.9% |
-| **Large** | 11 | 0.308 | 0.421 | 0.623 | 4.06x | 4.5% |
-| **XLarge** | 16 | 0.331 | 0.498 | 0.082 | 4.36x | 4.8% |
-| **XXLarge** | 11 | 0.992 | 1.245 | 0.021 | 13.05x | 14.5% |
+| Группа | N | MAE (eV) | RMSE (eV) | R² | Domain Shift |
+|--------|---|----------|-----------|----|--------------| 
+| **Small** | 8 | **0.112** | 0.145 | **0.969** | 1.47x |
+| **Medium** | 19 | **0.197** | 0.289 | **0.890** | 2.59x |
+| **Large** | 11 | 0.308 | 0.421 | 0.623 | 4.06x |
+| **XLarge** | 16 | 0.331 | 0.498 | 0.082 | 4.36x |
+| **XXLarge** | 11 | 0.992 | 1.245 | 0.021 | 13.05x |
 
 **Детальный анализ:**
 
@@ -365,16 +365,16 @@
 ### Анализ по классам антибиотиков
 
 **Лучшие результаты (малые молекулы):**
-- Nitroimidazole (Metronidazole): 1.1% относительная ошибка
-- Sulfonamide (Sulfisoxazole): 0.7% относительная ошибка
-- Antitubercular (Isoniazid): 1.6% относительная ошибка
-- Fluoroquinolone (Ciprofloxacin): 2.3% относительная ошибка
+- Nitroimidazole (Metronidazole): MAE ~0.1 eV (отличная точность)
+- Sulfonamide (Sulfisoxazole): MAE ~0.06 eV (отличная точность)
+- Antitubercular (Isoniazid): MAE ~0.14 eV (отличная точность)
+- Fluoroquinolone (Ciprofloxacin): MAE ~0.2 eV (хорошая точность)
 
 **Проблемные классы (крупные пептиды):**
-- Polymyxin (Colistin): 47.2% относительная ошибка
-- Lantibiotic (Nisin): 44.6% относительная ошибка
-- Lipopeptide (Surfactin): 59.7% относительная ошибка
-- Cyclic peptide (Gramicidin): 38.9% относительная ошибка
+- Polymyxin (Colistin): MAE ~3.5 eV (плохая точность)
+- Lantibiotic (Nisin): MAE ~3.2 eV (плохая точность)
+- Lipopeptide (Surfactin): MAE ~4.5 eV (плохая точность)
+- Cyclic peptide (Gramicidin): MAE ~2.8 eV (плохая точность)
 
 **Визуализации:** `results/experimental_gap_validation/visualizations/`
 - `correlation_analysis.png` - scatter plot предсказанных vs экспериментальных значений
